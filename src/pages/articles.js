@@ -57,7 +57,7 @@ const MovingImg = ({ title, img, link }) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className=" z-10 w-96 h-auto hidden absolute rounded-lg"
+        className=" z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
       />
     </Link>
   );
@@ -65,7 +65,7 @@ const MovingImg = ({ title, img, link }) => {
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative">
+    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
 
       <Link
@@ -79,15 +79,17 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
+               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitaliza text-2xl font-bold my-2 hover:underline mt-4">
+        <h2 className="capitaliza text-2xl font-bold my-2 hover:underline mt-4 xs:text-lg ">
           {title}
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
     </li>
   );
 };
@@ -104,10 +106,11 @@ const Article = ({ img, title, date, link }) => {
 
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center
     justify-between bg-light text-dark first:mt-0 border border-solid border-dark
-    border-r-4 border-b-4 "
+    border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light
+    sm:flex-col "
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4 sm:self-start sm:pl-0 xs:text-sm">{date}</span>
     </motion.li>
   );
 };
@@ -118,10 +121,10 @@ const articles = () => {
       <Head>
         <title> Damini Rai | Article Page </title>
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Words can change the World!" className="mb-16 " />
-          <ul className="grid grid-cols-2 gap-16">
+          <AnimatedText text="Words can change the World!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl " />
+          <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
             <FeaturedArticle
               title="React vs Vue vs Angular"
               summary="A Comprehensive Comparison of React.js, Angular.js and Vue.js"

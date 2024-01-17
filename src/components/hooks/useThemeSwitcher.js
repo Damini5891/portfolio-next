@@ -25,19 +25,19 @@ const useThemeSwitcher = () => {
       }
     };
 
-    // Initial call to handleChange to set the theme on component mount
     handleChange();
 
     mediaQuery.addEventListener('change', handleChange);
 
     return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []); // Empty dependency array to run only on component mount
+  }, []); 
 
   useEffect(() => {
     if (mode === 'dark') {
       window.localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');
-    } else {
+    } 
+    if(mode==="light"){
       window.localStorage.setItem('theme', 'light');
       document.documentElement.classList.remove('dark');
     }
