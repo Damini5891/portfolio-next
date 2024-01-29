@@ -11,6 +11,9 @@ import dcafe from "../../public/images/projects/dcafe.png";
 import learning from "../../public/images/projects/learning.png";
 import expense from "../../public/images/projects/expense.png";
 import taskmg from "../../public/images/projects/taskmg.png";
+import weather from "../../public/images/projects/weather.png";
+import portfolio from "../../public/images/projects/portfolio.png";
+
 import { motion } from "framer-motion";
 
 
@@ -130,7 +133,8 @@ const Projects = () => {
                 img={dcafe}
                 summary="A showcase of creativity and functionality, brought to life using React and styled with Tailwind CSS simplicity"
                 github="https://github.com/Damini5891/d-cafe"
-                link="https://github.com/Damini5891/d-cafe"
+                link="https://spiffy-florentine-cb9488.netlify.app/" 
+                target = "_blank"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -139,13 +143,13 @@ const Projects = () => {
                 type="Personal Project"
                 title="Musify"
                 img={musify}
-                github="https://github.com/Damini5891/musi-fy"
-                link="https://github.com/Damini5891/musi-fy"
+                github="https://github.com/Damini5891/Spotify-clone"
+                link="https://clinquant-cendol-116c42.netlify.app/"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Featured Project"
+                type="Personal Project"
                 title="E-larning Web App"
                 img={learning}
                 github="https://github.com/Damini5891/e-learning-web-app"
@@ -155,12 +159,12 @@ const Projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="Real time task management app"
-                img={taskmg}
-                summary=" Effortlessly manage tasks in real-time with the task manager web app. Stay organized and in control, 
-                with admin features for seamless task oversight and efficiency."
-                github="https://github.com/Damini5891/taskmg"
-                link="https://github.com/Damini5891/taskmg"
+                title="React Weather App"
+                img={weather}
+                summary="Access real-time weather data effortlessly with this web app. 
+                Enter any location to instantly view the current temperature, humidity, and wind speed for up-to-the-minute weather details"
+                github="https://github.com/Damini5891/weather-app"
+                link="https://amazing-eclair-1f4bc7.netlify.app/"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -169,7 +173,7 @@ const Projects = () => {
                 title="Expense tracker"
                 img={expense}
                 github="https://github.com/Damini5891/expense-tracker"
-                link="https://github.com/Damini5891/expense-tracker"
+                link="https://lively-buttercream-5a07e7.netlify.app/"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -178,7 +182,35 @@ const Projects = () => {
                 title="Tourly"
                 img={tourly}
                 github="https://github.com/Damini5891/tour-travel-website"
-                link="https://github.com/Damini5891/tour-travel-website"
+                link="https://tourly-two.vercel.app/"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Personal Project"
+                title="Real time task management app"
+                img={taskmg}
+                github="https://github.com/Damini5891/taskmg"
+                link="https://github.com/Damini5891/taskmg"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Personal Project"
+                title="Portfolio Website"
+                img={portfolio}
+                github="https://github.com/Damini5891/Damini5891.github.io"
+                link="https://damini5891.github.io//"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Featured Project"
+                title="Tourly"
+                img={tourly}
+                summary="Tour and Travel App! Powered by HTML, CSS and JavaScript, featuring Bootstrap for a clean design and lively animations."
+                github="https://github.com/Damini5891/tour-travel-website"
+                link="https://tourly-two.vercel.app/"
               />
             </div>
           </div>
