@@ -74,7 +74,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col justify-between items-center xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-center justify-center">
               <FontAwesomeIcon icon={faTerminal} className="inline-block w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-10"/> 
-                <h2 className="text-3xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold">Software Developer</span></h2>
+                <h2 className="text-3xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold">Sw Developer</span></h2>
               </div>
               <div className="flex flex-col items-center justify-center py-4" >
               <FontAwesomeIcon icon={faChartLine} className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-10"/> 

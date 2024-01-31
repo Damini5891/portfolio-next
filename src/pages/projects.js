@@ -13,6 +13,8 @@ import expense from "../../public/images/projects/expense.png";
 import taskmg from "../../public/images/projects/taskmg.png";
 import weather from "../../public/images/projects/weather.png";
 import portfolio from "../../public/images/projects/portfolio.png";
+import redstore from "../../public/images/projects/redstore.png";
+
 
 import { motion } from "framer-motion";
 
@@ -148,13 +150,14 @@ const Projects = () => {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project
+            <Project
                 type="Personal Project"
-                title="E-larning Web App"
-                img={learning}
-                github="https://github.com/Damini5891/e-learning-web-app"
-                link="https://github.com/Damini5891/e-learning-web-app"
+                title="Red Store E-commerce website"
+                img={redstore}
+                github="https://github.com/Damini5891/ecom"
+                link="https://dancing-mandazi-dccaa6.netlify.app/"
               />
+             
             </div>
             <div className="col-span-12">
               <FeaturedProject
@@ -177,10 +180,20 @@ const Projects = () => {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project
+            <Project
                 type="Personal Project"
+                title="E-larning Web App"
+                img={learning}
+                github="https://github.com/Damini5891/e-learning-web-app"
+                link="https://github.com/Damini5891/e-learning-web-app"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Featured Project"
                 title="Tourly"
                 img={tourly}
+                summary="Tour and Travel App! Powered by HTML, CSS and JavaScript, featuring Bootstrap for a clean design and lively animations."
                 github="https://github.com/Damini5891/tour-travel-website"
                 link="https://tourly-two.vercel.app/"
               />
@@ -203,16 +216,7 @@ const Projects = () => {
                 link="https://damini5891.github.io//"
               />
             </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Featured Project"
-                title="Tourly"
-                img={tourly}
-                summary="Tour and Travel App! Powered by HTML, CSS and JavaScript, featuring Bootstrap for a clean design and lively animations."
-                github="https://github.com/Damini5891/tour-travel-website"
-                link="https://tourly-two.vercel.app/"
-              />
-            </div>
+           
           </div>
         </Layout>
       </main>

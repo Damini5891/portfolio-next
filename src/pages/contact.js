@@ -42,7 +42,7 @@ const Contact = () => {
                   name="name"
                   placeholder="Your Name"
                   required
-                  className="w-full bg-gray-100 dark:bg-light bg-opacity-50 rounded border border-dark dark:border-light focus:border-dark/50 focus:bg-light focus:ring-2 focus:ring-dark/60 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 dark:bg-light bg-opacity-50 rounded border border-dark dark:border-light focus:border-dark/50 focus:bg-light focus:ring-2 focus:ring-dark dark:focus:ring-light text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="w-full bg-gray-100 dark:bg-light bg-opacity-50 rounded border border-dark dark:border-light focus:border-dark focus:bg-white focus:ring-2 focus:ring-dark/60 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 dark:bg-light bg-opacity-50 rounded border border-dark dark:border-light focus:border-dark focus:bg-white focus:ring-2 dark:focus:ring-light focus:ring-dark text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -77,16 +77,16 @@ const Contact = () => {
                   name="message"
                   placeholder="Your Message"
                   required
-                  className="w-full bg-gray-100 dark:bg-light bg-opacity-50 rounded border border-dark dark:border-light focus:border-dark focus:bg-white focus:ring-2 focus:ring-dark/60 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 dark:bg-light bg-opacity-50 rounded border border-dark dark:border-light focus:border-dark focus:bg-white focus:ring-2 focus:ring-dark dark:focus:ring-light h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>
             <div className="p-2 w-full">
               <button
-                className="flex mx-auto dark:text-dark dark:bg-light text-light bg-dark border-0 py-2 px-8 focus:outline-none hover:bg-primary-dark rounded text-lg"
+                className="flex mx-auto dark:text-dark dark:bg-light text-dark border border-dark bg-light hover:bg-dark hover:text-light dark:hover:border-light  py-2 px-8 focus:outline-none hover:bg-primary-dark rounded text-lg"
                 type="submit"
               >
-                Send Message <LinkArrow className={"w-4 ml-1"} />
+                Send Message ↗️
               </button>
             </div>
           </form>
