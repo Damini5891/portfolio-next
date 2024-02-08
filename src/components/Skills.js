@@ -33,18 +33,25 @@ transition={{duration:1.5}}
 )
 }
 
+const Skillmob = ({name, imageSrc}) => {
+  return(
+  <div className=''>
+    <Image src={imageSrc} alt={name} className="w-10 h-10 m-4" />
+  </div>
+  )
+  }
+
 const Skills = () => {
   return (
     <>
 <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32'>TechStack</h2>
 <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark
-lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
+lg:h-[80vh] 
 lg:bg-circularLightLg lg:dark:bg-circularDarkLg 
-md:bg-circularLightMd md:dark:bg-circularDarkMd
-sm:bg-circularLightSm sm:dark:bg-circularDarkSm
+md:hidden
 '>
 <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark text-light
-p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs-p-2
+p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs-p-2 
 '
 whileHover={{scale:1.05}}
 >
@@ -65,6 +72,24 @@ whileHover={{scale:1.05}}
 <Skill name ="Git" x="-25vw" y="10vw" imageSrc={giticon} />
 <Skill name ="SQL" x="-30vw" y="-10vw" imageSrc={sqllogo}/>
 </div>
+<div className="md:visible md:flex md:flex-wrap md:justify-between md:items-center md:mt-8 lg:hidden xl:hidden xxxl:hidden xxl:hidden">
+    <Skillmob  imageSrc={htmlicon} />
+    <Skillmob imageSrc={cssicon} />
+    <Skillmob  imageSrc={jsicon}/>
+    <Skillmob  imageSrc={reactlogo}/>
+    <Skillmob imageSrc={nexticon}/>
+    <Skillmob imageSrc={angular}/>
+    <Skillmob imageSrc={nodejs}/>
+    <Skillmob imageSrc={phplogo}/>
+    <Skillmob  imageSrc={python}/>
+    <Skillmob  imageSrc={figmalogo}/>
+    <Skillmob  imageSrc={tailwind}/>
+    <Skillmob  imageSrc={bootstrap}/>
+    <Skillmob imageSrc={giticon}/>
+    <Skillmob imageSrc={sqllogo}/>
+</div>
+
+
     </>
   )
 }

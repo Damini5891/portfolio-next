@@ -28,7 +28,7 @@ const Contact = () => {
             method="POST"
             className="flex flex-wrap -m-2 justify-center items-center"
           >
-            <div className="p-2 w-1/3 sm:w-1/2">
+            <div className="p-2 w-1/3 sm:w-full ">
               <div className="relative">
                 <label
                   htmlFor="name"
@@ -46,7 +46,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="p-2 w-1/3 sm:w-1/2">
+            <div className="p-2 w-1/3 sm:w-full">
               <div className="relative">
                 <label
                   htmlFor="email"
@@ -64,7 +64,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="p-2 w-2/3 sm:w-full">
+            <div className="p-2 w-2/3 sm:w-full ">
               <div className="relative">
                 <label
                   htmlFor="message"

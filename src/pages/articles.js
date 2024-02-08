@@ -129,7 +129,7 @@ const articles = () => {
               title="React vs Vue vs Angular"
               summary="A Comprehensive Comparison of React.js, Angular.js and Vue.js"
               time="5 min Read"
-              link="/"
+              link="https://medium.com/@raidamini2010/a-comprehensive-comparison-of-react-js-angular-js-and-vue-js-fcd3c6ac8c4d"
               img={jscomp}
             />
 
@@ -137,7 +137,7 @@ const articles = () => {
               title="Game Development"
               summary="The Art and Science of Game Designing and Development"
               time="5 min Read"
-              link="/"
+              link="https://medium.com/@raidamini2010/the-art-and-science-of-game-designing-and-development-a6c0d3382303"
               img={gamed}
             />
           </ul>
@@ -149,37 +149,37 @@ const articles = () => {
               title="The Unprecedented Growth of Artificial Intelligence in Today\'s World"
               img={aiimage}
               date="November, 17 2023"
-              link="/"
+              link="https://medium.com/@raidamini2010/the-unprecedented-growth-of-artificial-intelligence-in-todays-world-3d5c986359f6"
             />
             <Article
               title="Python: The Unrivaled Programming Language for the Modern Era "
               img={python}
               date="November, 17 2023"
-              link="/"
+              link="https://medium.com/@raidamini2010/python-the-unrivaled-programming-language-for-the-modern-era-4e85450d9d3a"
             />
             <Article
               title="Unveiling Insights: The World of Data Mining"
               img={datamining}
               date="November, 17 2023"
-              link="/"
+              link="https://medium.com/@raidamini2010/unveiling-insights-the-world-of-data-mining-eb6eabe97f24"
             />
             <Article
               title="The Crucial Role of Data Structures and Algorithms in Landing Your Dream Job."
               img={dsa}
               date="November, 29 2023"
-              link="/"
+              link="https://medium.com/@raidamini2010/the-crucial-role-of-data-structures-and-algorithms-in-landing-your-dream-job-5261e66196c7"
             />
             <Article
               title="Demystifying React Components for Data Visualization"
               img={reactcomp}
               date="December, 29 2023"
-              link="/"
+              link="https://medium.com/@raidamini2010/demystifying-react-components-for-data-visualization-1f9d83b6c1d8"
             />
               <Article
               title="Clothing-Accessories App powered with Angular, Node.js and MySQL"
               img={ecom}
               date="November, 4 2023"
-              link="/"
+              link="https://medium.com/@raidamini2010/revolutionizing-e-commerce-a-seamless-shopping-experience-with-our-angular-node-js-4ac89d325cd0"
             />
           </ul>
         </Layout>

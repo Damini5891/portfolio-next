@@ -73,21 +73,21 @@ const about = () => {
             </div>
             <div className="col-span-2 flex flex-col justify-between items-center xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-center justify-center">
-              <FontAwesomeIcon icon={faTerminal} className="inline-block w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-10"/> 
-                <h2 className="text-3xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold">Sw Developer</span></h2>
+              <FontAwesomeIcon icon={faTerminal} className="inline-block w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7"/> 
+                <h2 className="text-3xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold text-red-900">Developer</span></h2>
               </div>
               <div className="flex flex-col items-center justify-center py-4" >
-              <FontAwesomeIcon icon={faChartLine} className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-10"/> 
-                <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold">UI/UX Artisan</span></h2>
+              <FontAwesomeIcon icon={faChartLine} className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7"/> 
+                <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold text-red-900">UI/UX Artisan</span></h2>
               </div>
               <div className="flex flex-col items-center justify-center ">
-                <FontAwesomeIcon icon={faPenNib} className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-10" /> 
-               <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold">Content Writer</span></h2>
+                <FontAwesomeIcon icon={faPenNib} className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7" /> 
+               <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold text-red-900">Content Writer</span></h2>
               </div>
             </div>
           </div>
           
-        <Skills/>
+        <Skills />
         <Experience/>
         <Education/>
         </Layout>
