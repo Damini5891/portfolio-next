@@ -17,7 +17,7 @@ export default function Home() {
         <title>Damini Rai | Homepage</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light relative">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 lg:hidden md:inline-block md:w-full">
