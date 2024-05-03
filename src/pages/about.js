@@ -5,12 +5,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import mypic from "../../public/images/profile/mypic.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenNib, faChartLine, faTerminal } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPenNib,
+  faChartLine,
+  faTerminal,
+} from "@fortawesome/free-solid-svg-icons";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
-
 
 const about = () => {
   return (
@@ -20,7 +23,10 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Passion fuels Purpose!" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"/>
+          <AnimatedText
+            text="Passion fuels Purpose!"
+            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+          />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
@@ -30,7 +36,11 @@ const about = () => {
                 Hello again!👋 <br />I am a Web Developer who loves creating
                 applications. Currently doing stuffs on my own, have a look at
                 my&nbsp;
-                <Link href="https://github.com/Damini5891" target="_blank" className="font-bold">
+                <Link
+                  href="https://github.com/Damini5891"
+                  target="_blank"
+                  className="font-bold"
+                >
                   github.&nbsp;
                 </Link>
                 Also, a part-time gamer at&nbsp;
@@ -39,11 +49,14 @@ const about = () => {
                   target="_blank"
                   className="font-bold"
                 >
-                  youtube&nbsp;
+                  youtube.&nbsp;
                 </Link>
-                (Do not forget to subscribe 😉). For professional details about
-                me find my&nbsp;
-                <Link href="/DaminiRai.pdf" target="_blank" className="font-bold">
+                For professional details about me find my&nbsp;
+                <Link
+                  href="/DaminiRai.pdf"
+                  target="_blank"
+                  className="font-bold"
+                >
                   resume&nbsp;
                 </Link>
                 here.
@@ -68,28 +81,43 @@ const about = () => {
                 alt="Damini"
                 className="w-full h-auto rounded-2xl"
                 priority
-               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="col-span-2 flex flex-col justify-between items-center xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-center justify-center">
-              <FontAwesomeIcon icon={faTerminal} className="inline-block w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7"/> 
-                <h2 className="text-3xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold text-red-900">Developer</span></h2>
+                <FontAwesomeIcon
+                  icon={faTerminal}
+                  className="inline-block w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7"
+                />
+                <h2 className="text-3xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm">
+                  <span className="font-bold text-red-900">Developer</span>
+                </h2>
               </div>
-              <div className="flex flex-col items-center justify-center py-4" >
-              <FontAwesomeIcon icon={faChartLine} className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7"/> 
-                <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold text-red-900">UI/UX Artisan</span></h2>
+              <div className="flex flex-col items-center justify-center py-4">
+                <FontAwesomeIcon
+                  icon={faChartLine}
+                  className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7"
+                />
+                <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm">
+                  <span className="font-bold text-red-900">UI/UX Artisan</span>
+                </h2>
               </div>
               <div className="flex flex-col items-center justify-center ">
-                <FontAwesomeIcon icon={faPenNib} className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7" /> 
-               <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm"><span className="font-bold text-red-900">Content Writer</span></h2>
+                <FontAwesomeIcon
+                  icon={faPenNib}
+                  className="inline-block  w-20 font-bold items-center py-4 xl:items-center md:w-15 sm:w-7"
+                />
+                <h2 className="text-3xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm">
+                  <span className="font-bold text-red-900">Content Writer</span>
+                </h2>
               </div>
             </div>
           </div>
-          
-        <Skills />
-        <Experience/>
-        <Education/>
+
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
