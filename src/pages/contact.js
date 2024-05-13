@@ -109,7 +109,7 @@ const Contact = () => {
                 <GithubIcon />
               </motion.a>
               <motion.a
-                href="https://twitter.com/the_miniii"
+                href="https://twitter.com/DaminiRai11"
                 target="_blank"
                 className={`${socialClasses}`}
                 whileHover={{ y: -2 }}

@@ -43,14 +43,6 @@ const about = () => {
                 >
                   github.&nbsp;
                 </Link>
-                Also, a part-time gamer at&nbsp;
-                <Link
-                  href="https://youtube.com/@aceauroraaa?si=wQpcDFeAMm7S07m2"
-                  target="_blank"
-                  className="font-bold"
-                >
-                  youtube.&nbsp;
-                </Link>
                 For professional details about me find my&nbsp;
                 <Link
                   href="/DaminiRai.pdf"
